@@ -1,0 +1,4 @@
+<?php
+echo "From j2 tamplete: Today is "; echo date("l j F Y"); echo " "; echo date("H:i:s");
+?>
+<H1>From Ansible: Today is {{ ansible_date_time.weekday }} {{ ansible_date_time.day }}.{{ ansible_date_time.month }}.{{ ansible_date_time.year }}</H1>
